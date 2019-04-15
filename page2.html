@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  * {
-    margin:0;
-    padding:0;
-  }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
 
-  body {
-    background-image: url("https://i.pinimg.com/originals/16/38/ca/1638caddaaf8b33a7ac1ac066b406593.jpg");
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
 
-  </style>
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -40%);
+  -ms-transform: translate(-40%, -40%);
+  transform: translate(-40%, -40%);
+  text-align: center;
+}
+</style>
 </head>
-
 <body>
 
+<h2>Black Tea</h2>
+<p>Hover over the image to see the effect.</p>
 
-    <a href="index.html"><h1>Click Here To Go Back</h1></a>
+<div class="container">
+  <img src="images/t.png
+  " alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Use fresh, pure, cold filtered water. Spring water is the best.
+Black teas are typically brewed for longer periods of time and in hotter temperatures than green teas. Generally, this is somewhere between 200 and 212 degrees for 3 to 5 minutes.
 
-    <h1>Enjoy a nice cup of tea. You really deserve it. Good Work.<h1>
-
-
-  <IMG STYLE="position:absolute; TOP:400px; LEFT:750px; WIDTH:250px; HEIGHT:200x" SRC="images/t.png">
-<style>
+If your black tea came with specific recommendations for brewing, use those. But using about 2 grams of loose leaf tea per 8 oz. cup of water is a safe bet.
+Cover your tea while it steeps to keep all the heat in the steeping vessel.
+Don’t oversteep your tea! The longer your tea steeps, the more quickly it will release any bitterness and astringency. Taste your tea after the recommended steeping time and then decide if you’d like it to steep a little longer.
+Most high-quality loose leaf black teas can be steeped multiple times.
+Most black teas are strong enough to stand up to milk and sugar. But to truly enjoy the subtle flavor differences between the many varieties of black tea, try sipping them plain with no additives.</div>
+  </div>
+</div>
 
 </body>
 </html>
