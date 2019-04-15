@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#example1 {
-  background:
- url(https://i.imgur.com/iN26Eag.gif) right bottom repeat, url(https://thewallpaper.co/wp-content/uploads/2017/10/hd-flower-imagessunrise-mountains-windows-desktop-images-chinamobile-cool-images-view.jpg) left top repeat;
- padding: 400px;
+.container {
+  position: relative;
+  width: 50%;
 }
+
+.image {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -40%);
+  -ms-transform: translate(-40%, -40%);
+  transform: translate(-40%, -40%);
+  text-align: center;
 }
 </style>
 </head>
 <body>
 
-<div id="example1">
-  <h2>Tea</h2>
-  <!DOCTYPE html>
-<html>
-<body>
+<h2>Black Tea</h2>
+<p>Hover over the image to see the effect.</p>
 
-<a href="index.html"><h6>Go Back You Messed Up</h6></a>
-<a href="page2.html"><h6> Shut Up Idiot I Like Actual Tea</h6></a>
+<div class="container">
+  <img src="images/t.png
+  " alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Use fresh, pure, cold filtered water. Spring water is the best.
+Black teas are typically brewed for longer periods of time and in hotter temperatures than green teas. Generally, this is somewhere between 200 and 212 degrees for 3 to 5 minutes.
 
-</body>
-</html>
-
-
-  <p>Let's be honest there, you probably only selected tea beause you love milk tea but actual tea is too bitter for you</p>
-  <p>Whatever, I'm disappointed but not surprised.</p>
+If your black tea came with specific recommendations for brewing, use those. But using about 2 grams of loose leaf tea per 8 oz. cup of water is a safe bet.
+Cover your tea while it steeps to keep all the heat in the steeping vessel.
+Don’t oversteep your tea! The longer your tea steeps, the more quickly it will release any bitterness and astringency. Taste your tea after the recommended steeping time and then decide if you’d like it to steep a little longer.
+Most high-quality loose leaf black teas can be steeped multiple times.
+Most black teas are strong enough to stand up to milk and sugar. But to truly enjoy the subtle flavor differences between the many varieties of black tea, try sipping them plain with no additives.</div>
+  </div>
 </div>
-
 
 </body>
 </html>
