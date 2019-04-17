@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  * {
-    margin:0;
-    padding:0;
-  }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background:
+  url(https://i.imgur.com/7RVk5GZ.png);
+  padding: 100px;
 
-  body {
-    background-image: url("http://media.gettyimages.com/vectors/vector-flower-seamless-pattern-background-elegant-texture-for-old-vector-id957222998?s=170667a&w=1007");
+}
+.container {
+  position: relative;
+  width: 5 0%;
+}
 
-  }
-  </style>
+.image {
+  display: block;
+  width: 100%;
+  height: 40%
+
+}
+  .overlay {
+  position: absolute;
+  top: 100;
+  bottom: 0;
+  left: 0;
+  right: 50;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #340000	;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  bottom: 200%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
 </head>
-
 <body>
 
-  <h1>Coffee</h1>
-  <a href="index.html"><h6>If you chose coffee, you probably get < 5 hours of sleep a night and you should probably stop being bad to your body. Go Back.</h6></a>
+<h2>Oolong Tea</h2>
+<p></p>
 
+<div class="container">
+  <img src="images/uwu.jpg
 
-<IMG STYLE="position:absolute; TOP:200px; LEFT:750px; WIDTH:500px; HEIGHT:500x" SRC="images/cof.png">
-
+  " alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Oolong tea is fragrant and has a fruity flavor. Despite its caffeine content, it is still a relaxing drink. The health benefits of oolong tea are doubled because of the combined qualities of black tea and green tea. There are numerous kinds of tea in this world, but oolong tea is considered as one of the most beneficial types of tea.. But to truly enjoy the subtle flavor differences between the many varieties of black tea, try sipping them plain with no additives.</div>
+  </div>
+</div>
+<a href="index.html"><h6>This link goes back to home</h6></a>
 </body>
 </html>
